@@ -1,6 +1,16 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
 import './index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faPython,
+  faJava,
+  faJsSquare,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons'
+import LogoC from '../../assets/images/c-1.svg'
+import LogoCSharp from '../../assets/images/c--4.svg'
+import LogoPython from '../../assets/images/python-5.svg'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,6 +41,29 @@ const About = () => {
             effectively, faces problems analytically and has the technical
             skills to tackle any challenge.
           </p>
+        </div>
+
+        <div className="stage-cube-cont">
+          <div className="cubespinner">
+            <div className="face1">
+              <img src={LogoC} alt="Logo C" className="logo-cube" />
+            </div>
+            <div className="face2">
+              <img src={LogoPython} alt="Logo Python" className="logo-cube" />
+            </div>
+            <div className="face3">
+              <img src={LogoCSharp} alt="Logo Csharp" className="logo-cube" />
+            </div>
+            <div className="face4">
+              <FontAwesomeIcon icon={faReact} color="#5ED4f4" />
+            </div>
+            <div className="face5">
+              <FontAwesomeIcon icon={faJava} color="#EC4D28" />
+            </div>
+            <div className="face6">
+              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+            </div>
+          </div>
         </div>
       </div>
     </>
