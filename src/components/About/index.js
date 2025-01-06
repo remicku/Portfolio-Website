@@ -11,6 +11,7 @@ import {
 import LogoC from '../../assets/images/c-1.svg'
 import LogoCSharp from '../../assets/images/c--4.svg'
 import LogoPython from '../../assets/images/python-5.svg'
+import Loader from 'react-loaders'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -66,6 +67,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
