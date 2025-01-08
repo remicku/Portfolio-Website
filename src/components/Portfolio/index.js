@@ -22,7 +22,11 @@ const Portfolio = () => {
       <div className="images-container">
         {portfolio.map((port, idx) => {
           return (
-            <div className="image-box">
+            <div
+              className="image-box"
+              key={idx}
+              style={{ '--delay': `${idx * 1.1 + 2.5}s` }}
+            >
               <img
                 src={port.cover}
                 className="portfolio-image"
@@ -48,7 +52,7 @@ const Portfolio = () => {
         <h1 className="page-title">
           <AnimatedLetters
             letterClass={letterClass}
-            strArray={'Portfolio'.split('')}
+            strArray={"Portfolio".split("")}
             idx={15}
           />
         </h1>
