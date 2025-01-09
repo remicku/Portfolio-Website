@@ -11,6 +11,10 @@
   opacity: 1;
   animation: bounce 8s ease-in-out;
 
+  &.animate {
+    opacity: 1;
+  }
+
   svg {
     width: 100%;
     height: auto;
@@ -30,6 +34,10 @@
     opacity: 1;
     transform: rotateZ(30deg);
     z-index: 1;
+
+    &.animate {
+      opacity: 1;
+    }
   }
 }
 
