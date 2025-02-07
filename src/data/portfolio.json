@@ -22,19 +22,19 @@
       "cover": "/portfolio/icwars.png",
       "title": "Advance Wars",
       "description": "Java",
-      "url": "https://google.com"
+      "url": "https://github.com/remicku/Advanced-Wars"
     },
     {
       "cover": "/portfolio/malloc.jpg",
       "title": "Malloc Library",
       "description": "C",
-      "url": "https://github.com/remicku/Malloc-2027"
+      "url": "https://github.com/remicku/Malloc-Library"
     },
     {
       "cover": "/portfolio/website.png",
       "title": "Portfolio Website",
       "description": "React JS",
-      "url": "https://google.com"
+      "url": "https://remibrenaut.vercel.app/"
     }
   ]
 }
