@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'SERVICE KEY',
-        'TEMPLATE KEY',
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         refForm.current,
-        'PUBLIC KEY'
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -59,7 +59,7 @@ const Contact = () => {
           <br/>
           </p>
           <div className='contact-form'>
-            <form ref={refForm} onsubmit={sendEmail}>
+            <form ref={refForm} onSubmit={sendEmail}>
                 <ul>
                     <li className="half">
                         <input type="text" name="name" placeholder="Name" required />
@@ -71,7 +71,7 @@ const Contact = () => {
                         <input type="text" name="subject" placeholder="Subject" required />
                     </li>
                     <li>
-                        <textarea type="text" name="Message" placeholder="Message" required />
+                        <textarea type="text" name="message" placeholder="Message" required />
                     </li>
                     <li>
                         <input type="submit" className='flat-button' value="SEND" />
