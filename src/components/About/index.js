@@ -12,6 +12,7 @@ import LogoC from '../../assets/images/c-1.svg'
 import LogoCSharp from '../../assets/images/c--4.svg'
 import LogoPython from '../../assets/images/python-5.svg'
 import Loader from 'react-loaders'
+import ResumeFile from '../../assets/pdfs/Remi_Brenaut_Resume_2025.pdf'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -42,6 +43,14 @@ const About = () => {
             effectively, faces problems analytically and has the technical
             skills to tackle any challenge.
           </p>
+          <a 
+            href={ResumeFile}
+            target="_blank"
+            rel="noreferrer"
+            className="flat-button"
+          >
+            VIEW RESUME
+          </a>
         </div>
 
         <div className="stage-cube-cont">
