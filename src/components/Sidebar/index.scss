@@ -135,7 +135,8 @@
   }
 }
 
-.hamburger-icon, .close-icon {
+.hamburger-icon,
+.close-icon {
   display: none;
 }
 
@@ -146,7 +147,8 @@
     height: auto;
     min-height: auto;
 
-    ul, nav {
+    ul,
+    nav {
       display: none;
 
     }
@@ -178,7 +180,8 @@
       }
     }
 
-    .hamburger-icon, .close-icon {
+    .hamburger-icon,
+    .close-icon {
       display: block;
       position: absolute;
       top: 15px;
