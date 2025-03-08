@@ -1,128 +1,129 @@
 .stage-cube-cont {
-    width: 50%;
-    height: 100%;
-    top: 0;
-    padding-top: 18%;
-    margin-left: 0;
-    position: absolute;
-    right: 0;
-    overflow: hidden;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  padding-top: 18%;
+  margin-left: 0;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
 }
 
 .logo-cube {
-    width: 100px;
-    /* Adjust the size as needed */
-    height: auto;
-    /* Maintain aspect ratio */
+  width: 100px;
+  /* Adjust the size as needed */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 .flat-button {
-    color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid #ffd700;
-    margin-top: 25px;
-    float: left;
-    animation: fadeIn 1s 1.8s backwards;
-    white-space: nowrap;
+  color: #ffd700;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+  float: left;
+  animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
 
-    &:hover {
-        background: #ffd700;
-        color: #333;
-    }
+  &:hover {
+    background: #ffd700;
+    color: #333;
+  }
 }
 
 .cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: 100px 100px 0px;
-    margin-left: calc(50% - 100px);
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0px;
+  margin-left: calc(50% - 100px);
 
-    div {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #ccc;
-        background: rgba(255, 255, 255, 0.4);
-        font-size: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 20px 0px lightyellow;
-    }
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.4);
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px lightyellow;
+  }
 
-    .face1 {
-        transform: translateZ(100px);
-    }
+  .face1 {
+    transform: translateZ(100px);
+  }
 
-    .face2 {
-        transform: rotateY(90deg) rotateZ(-90deg) translateZ(100px);
-    }
+  .face2 {
+    transform: rotateY(90deg) rotateZ(-90deg) translateZ(100px);
+  }
 
-    .face3 {
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+  }
 
-    .face4 {
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+  }
 
-    .face5 {
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+  }
 
-    .face6 {
-        transform: rotateX(-90deg) translateZ(100px);
-    }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
 }
 
 @keyframes spincube {
 
-    from,
-    to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
 
-    16% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
+  16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
 
-    33% {
-        transform: rotateY(-90deg) rotateX(90deg);
-    }
+  33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+  }
 
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
 
-    66% {
-        transform: rotateY(-270deg) rotateX(90deg);
-    }
+  66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+  }
 
-    83% {
-        transform: rotateX(90deg);
-    }
+  83% {
+    transform: rotateX(90deg);
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .flat-button {
-        float: none;
-        display: block;
-        margin: 35px auto 0 auto;
-        width: 132px;
-    }
+  .flat-button {
+    float: none;
+    display: block;
+    margin: 35px auto 0 auto;
+    width: 132px;
+  }
 
-    .stage-cube-cont {
-        position: initial;
-        width: 100%;
-        height: 0%;
-        overflow: visible;
-    }
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+    margin-top: 15px;
+  }
 }
