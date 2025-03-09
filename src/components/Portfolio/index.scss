@@ -139,10 +139,23 @@
       margin-left: 20px;
       margin-top: 20px;
     }
+
     .image-box {
-      height: 200px;
+      height: 150px;
       max-width: calc(50% - 10px);
       flex: 0 0 calc(50% - 10px);
+
+      .content {
+        padding: 10px 15px;
+      }
+
+      .title {
+        font-size: 17px;
+      }
+
+      .description {
+        display: none;
+      }
     }
   }
 }
