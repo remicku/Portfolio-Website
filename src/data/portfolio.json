@@ -4,31 +4,31 @@
       "cover": "/portfolio/sudoku.jpeg",
       "title": "OCR Sudoku Solver",
       "description": "C, GTK, SDL2",
-      "url": "https://github.com/remicku/OCR-Sudoku-Solver"
+      "url": "https://github.com/remicku/ocr-sudoku-solver"
     },
     {
       "cover": "/portfolio/absolute.png",
       "title": "Absolut Disaster",
       "description": "C#, Unity",
-      "url": "https://github.com/remicku/ABSOLUT-DISASTER"
+      "url": "https://absolutdisaster.vercel.app/"
     },
     {
       "cover": "/portfolio/PLPredictor.png",
       "title": "PL Football Predictor",
       "description": "Python, Sci-kit Learn, Pandas",
-      "url": "https://github.com/remicku/Football-Predictions"
+      "url": "https://github.com/remicku/football-predictions"
     },
     {
       "cover": "/portfolio/icwars.png",
       "title": "Advance Wars",
       "description": "Java",
-      "url": "https://github.com/remicku/Advanced-Wars"
+      "url": "https://github.com/remicku/advanced-wars"
     },
     {
       "cover": "/portfolio/malloc.jpg",
       "title": "Malloc Library",
       "description": "C",
-      "url": "https://github.com/remicku/Malloc-Library"
+      "url": "https://github.com/remicku/malloc-library"
     },
     {
       "cover": "/portfolio/website.png",
