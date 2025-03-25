@@ -35,6 +35,12 @@
       "title": "Portfolio Website",
       "description": "React JS",
       "url": "https://remibrenaut.vercel.app/"
+    },
+    {
+      "cover": "/portfolio/chatbot.svg",
+      "title": "Contextual Chatbot",
+      "description": "Python, Pytorch",
+      "url": "https://github.com/remicku/contextual-chatbot"
     }
   ]
 }
