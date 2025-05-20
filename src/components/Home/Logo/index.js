@@ -16,8 +16,7 @@ const Logo = () => {
           className="svg-container"
           transform="translate(0 457) scale(.1 -.1)"
           fill="none"
-        >
-        </g>
+        ></g>
       </svg>
     </div>
   )

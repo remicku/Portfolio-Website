@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faPython,
   faJava,
   faJsSquare,
   faReact,

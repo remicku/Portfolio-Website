@@ -25,9 +25,12 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Remi Brenaut</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""/>
+      crossorigin=""
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -48,12 +51,11 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-        // Create a script element to load the EmailJS library
-        document.addEventListener('DOMContentLoaded', function() {
+      // Create a script element to load the EmailJS library
+      document.addEventListener('DOMContentLoaded', function () {
         // Initialize EmailJS with the public key
-        emailjs.init('%REACT_APP_EMAILJS_PUBLIC_KEY%');
-      });
-
+        emailjs.init('%REACT_APP_EMAILJS_PUBLIC_KEY%')
+      })
     </script>
   </body>
 </html>
